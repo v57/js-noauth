@@ -1,16 +1,9 @@
 {
-  "name": "@v57/strip",
-  "version": "1.0.3",
+  "name": "@v57/noauth",
+  "version": "1.0.0",
   "description": "Removes undefined values from object",
   "main": "index.js",
-  "files": [
-    "index.js",
-    "index.d.ts"
-  ],
-  "types": "index.d.ts",
-  "scripts": {
-    "ts": "npx -p typescript tsc index.js -d --allowJs --emitDeclarationOnly --removeComments"
-  },
+  "files": ["index.js"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/v57/js-noauth.git"

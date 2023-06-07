@@ -1,7 +1,7 @@
 {
   "name": "@v57/noauth",
   "version": "1.0.0",
-  "description": "Removes undefined values from object",
+  "description": "Zero Knowledge JWT Authorization: Secure Authentication without Storing User Accounts",
   "main": "index.js",
   "files": ["index.js"],
   "repository": {

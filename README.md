@@ -1,4 +1,4 @@
-# Description
+# No Auth
 
 ## Zero Knowledge JWT Authorization: Secure Authentication without Storing User Accounts
 
@@ -29,5 +29,20 @@ npm install --save @v57/noauth
 
 ## Usage
 ``` js
+const { auth, getSecret, setServerSecret } = require('@v57/noauth')
 
+// Setting server secret
+// Will be stored globally, so auth middleware will be available in any file
+setServerSecret('9HoB7GB9yGA5BUNeLe6aB1sx8Jm8PoAgE5gmiEiqTFmD')
+
+// Starting server with auth/create and hello/authorized api
+const app = express()
+  .disable('x-powered-by').set("etag", false)
+  .post('auth/create', (req, res) => {
+    const user = newId(16)
+    const secret = getSecret(user)
+    res.json({ user, secret })
+  }).post('hello/authorized', auth, (req, res) => {
+    res.json({ message: 'hi', to: req.from })
+  }).listen(8080)
 ```

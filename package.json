@@ -1,6 +1,6 @@
 {
   "name": "@v57/noauth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zero Knowledge JWT Authorization: Secure Authentication without Storing User Accounts",
   "main": "index.js",
   "files": ["index.js"],

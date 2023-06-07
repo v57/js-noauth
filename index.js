@@ -1,7 +1,7 @@
 'use strict'
-import jwt from 'jsonwebtoken'
-import base58 from 'bs58'
-import crypto from 'crypto'
+const jwt = require('jsonwebtoken')
+const base58 = require('bs58')
+const crypto = require('crypto')
 
 // Exported functions
 

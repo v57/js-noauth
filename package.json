@@ -1,13 +1,13 @@
 {
   "name": "@v57/noauth",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Zero Knowledge JWT Authorization: Secure Authentication without Storing User Accounts",
   "main": "index.js",
   "files": ["index.js", "index.d.ts"],
   "types": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/v57/js-noauth.git"
+    "url": "git+https://github.com/v57/noauth.js.git"
   },
   "keywords": [
     "jwt", "auth", "authorization", "server", "middleware", "crypto"
@@ -18,9 +18,9 @@
     "node": ">= 8.0.0"
   },
   "bugs": {
-    "url": "https://github.com/v57/js-noauth/issues"
+    "url": "https://github.com/v57/noauth.js/issues"
   },
-  "homepage": "https://github.com/v57/js-noauth#readme",
+  "homepage": "https://github.com/v57/noauth.js#readme",
   "dependencies": {
     "bs58": "^5.0.0",
     "jsonwebtoken": "^9.0.0"
